@@ -1,0 +1,119 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dazuka Techno</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="{% static 'images/logo.jpeg' %}" alt="Logo" class="w-12 h-12 rounded-full">
+                <h1 class="text-2xl font-bold text-gray-800">Dazuka Techno</h1>
+            </div>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#services" class="text-gray-700 hover:text-blue-600">Services</a></li>
+                <li><a href="#projects" class="text-gray-700 hover:text-blue-600">Projects</a></li>
+                <li><a href="#team" class="text-gray-700 hover:text-blue-600">Team</a></li>
+                <li><a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="text-center py-20 bg-gray-900 text-white">
+        <h2 class="text-4xl font-bold">Welcome to Dazuka Techno</h2>
+        <p class="mt-4 text-lg">Innovating the future with technology solutions</p>
+        <a href="#services" class="mt-6 inline-block bg-white text-gray-600 px-6 py-2 rounded-full shadow-md">Our Services</a>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="container mx-auto py-16 px-6">
+        <h2 class="text-3xl font-bold text-center">Our Services</h2>
+        <div class="mt-8 grid md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <h3 class="text-xl font-semibold">Web Development</h3>
+                <p class="mt-2 text-gray-600">Modern and responsive websites</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <h3 class="text-xl font-semibold">AI Solutions</h3>
+                <p class="mt-2 text-gray-600">Smart and automated systems</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <h3 class="text-xl font-semibold">Tech Services</h3>
+                <p class="mt-2 text-gray-600">Help you with tech related problems.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="bg-gray-200 py-16 px-6">
+        <h2 class="text-3xl font-bold text-center">Our Projects</h2>
+        <div class="mt-8 grid md:grid-cols-3 gap-6 container mx-auto">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <!--<img src="{% static 'images/friendsmedia1.png' %}" alt="Dazuka Techno Logo" >-->
+        <video autoplay loop muted>
+            <source src="{% static 'images/friendmedia.mp4' %}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+                <p class="mt-2 text-gray-800">Friendsmedia a social media platform where you can see each other posted images.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <img src="{% static 'images/default1.webp' %}" alt="Dazuka Techno Logo" >
+                <p class="mt-2 text-gray-800">New software are coming soon.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <img src="{% static 'images/default1.webp' %}" alt="Dazuka Techno Logo" >
+                <p class="mt-2 text-gray-800">New software are coming soon.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Team Section -->
+    <section id="team" class="bg-gray-200 py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold">Our Team</h2>
+            <div class="mt-8 flex flex-wrap justify-center gap-6">
+                <div class="bg-white p-4 rounded-lg shadow-md w-64">
+                    <h3 class="font-semibold">Dev Singh</h3>
+                    <p class="text-gray-600">Founder & CEO</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="container mx-auto py-16 px-6">
+        <h2 class="text-3xl font-bold text-center">Get in Touch</h2>
+        <form class="mt-8 max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md">
+            <input type="text" placeholder="Your Name" class="w-full p-2 border rounded mb-4">
+            <input type="email" placeholder="Your Email" class="w-full p-2 border rounded mb-4">
+            <textarea placeholder="Your Message" class="w-full p-2 border rounded mb-4"></textarea>
+            <button class="bg-blue-600 text-white px-4 py-2 rounded w-full">Send Message</button>
+        </form>
+    </section>
+    
+
+    <!-- Company Address Section -->
+    <section id="company-info" class="bg-gray-300 py-10">
+        <div class="container mx-auto text-center">
+            <h2 class="text-2xl font-bold">Company Information</h2>
+            <p class="mt-4 text-gray-700">Address: HN.30, Mahaveer Colony, Shivnanadanpur, Bishrampur, C.G. India</p>
+            <p class="text-gray-700">Phone: +91 9131797844</p>
+            <p class="text-gray-700">Email: dazukatechno@gmail.com</p>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-gray-900 text-white">
+        &copy; 2025 Dazuka Techno. All rights reserved.
+    </footer>
+</body>
+</html>
